@@ -97,7 +97,7 @@ void dijkstra(int graph[V][V], int src)
 // driver program to test above function
 int main()
 {
-	/* Let us create the example graph discussed above */
+    /* Let us create the example graph discussed above */
 	int graph[V][V] = { { 0, 4, 0, 0, 0, 0, 0, 8, 0 },
                         { 4, 0, 8, 0, 0, 0, 0, 11, 0 },
                         { 0, 8, 0, 7, 0, 4, 0, 0, 2 },
@@ -119,6 +119,21 @@ Contoh graf yang digunakan:
 
 *Shortest path tree* yang dihasilkan:
 ![Hasil Dijkstra](img/hasil_dijkstra.JPG)
+
+Output:
+
+```cpp
+Vertex   Distance from Source
+0                0
+1                4
+2                12
+3                19
+4                21
+5                11
+6                9
+7                8
+8                14
+```
 
 Referensi:
 
