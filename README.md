@@ -1,6 +1,8 @@
 
 # Algoritma Dijkstra
 
+## Pendahuluan
+
 Algoritma Dijkstra adalah suatu algoritma yang digunakan untuk mencari jalur terpendek di antara dua vertex/node dalam suatu graf. Algoritma ini ditemukan oleh seorang ilmuwan komputer Dr. Edsger W. Dijkstra pada tahun 1959.
 
 Sekarang, algoritma Dijkstra lebih banyak digunakan untuk menghitung jarak dari suatu node ke masing-masing node lainnya yang disimpan dalam tree (*shortest path tree*). Penggunaan algoritma ini dalam kehidupan nyata cukup beragam, mulai dari mencari jarak terdekat antara lokasi hingga *machine learning*. Sayangnya, algoritma ini tidak dapat digunakan untuk graf yang memiliki edge dengan nilai negatif.
@@ -14,6 +16,8 @@ Lalu, lakukan looping selama vertex masih ada yang belum masuk ke *shortest path
 1. Ambil sebuah vertex bernama u yang belum masuk ke *shortest path tree* dan memiliki nilai jarak terendah.
 2. Masukkan vertex itu ke dalam tree.
 3. Perbarui jarak semua vertex (v) yang terhubung dengan vertex u dengan melakukan looping pada tiap vertexnya dengan ketentuan perbarui jika penjumlahan jarak u dari vertex sumber dengan jarak u-v kurang dari nilai jarak v yang tercatat pada array.
+
+## Contoh Implementasi
 
 Contoh Implementasi: (diambil dari GeeksForGeeks)
 
